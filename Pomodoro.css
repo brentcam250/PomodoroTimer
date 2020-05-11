@@ -1,0 +1,20 @@
+.grid {
+    margin: auto auto;
+    border: 2px solid black;
+}
+
+.top{
+    display: flex;
+}
+
+.session {
+    border: 1px solid black;
+    padding: 5px;
+}
+.break {
+    border: 1px solid black;
+    padding: 5px;
+}
+.time{
+    display:grid;
+}
