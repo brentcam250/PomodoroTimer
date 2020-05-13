@@ -5,38 +5,45 @@
 </head>
 
 <body>
-    <h1>Pomodoro Clock</h1>
+   
     <div class = 'grid'>
+         <h1 class = 'pomodoro-title'>Pomodoro Clock</h1>
         <div class = 'top'>
             <div class = 'session'>
                 <h2>Session</h2>
-                <div class = 'down-button'>down</div>
-                <div class = 'minutes' id = 'session-minutes'>25</div>
-                <div class = 'up-button'>up</div>
+                <div class = 'down-button classButton' id = 'session-down'>down</div>
+                <div class = 'minutes classButton' id = 'session-minutes'></div>
+                <div class = 'up-button classButton' id = 'session-up'>up</div>
             </div>
             <div class = 'break'>
                 <h2>Break</h2>
-                <div class = 'down-button'>down</div>
-                <div class = 'minutes' id = 'break-minutes'>5</div>
-                <div class = 'up-button'>up</div>
+                <div class = 'down-button classButton' id = 'break-down'>down</div>
+                <div class = 'minutes classButton' id = 'break-minutes'></div>
+                <div class = 'up-button classButton' id = 'break-up'>up</div>
             </div>
         </div>
         <div class = 'time'>
-            <div class = 'play-button'>
-                Play
-            </div>
-            <div class = 'refresh-button'>
-                refresh
-            </div>
+            <div class = 'topBox'> 
+                <div class = 'play-button classButton' id = 'play-button'>
+                    Play
+                </div>
+                <div class = 'refresh-button classButton' id = 'refresh-button'>
+                    refresh
+                </div>
+            </div> 
             <div class = 'clock'>
                 25:00
             </div>
-            <div class = 'pause-button'>
-                Pause  
+            <div class = 'topBox'>
+                <div class = 'pause-button classButton' id = 'pause-button'>
+                    Pause  
+                </div>
+                <div class = 'stop-button classButton' id = 'stop-button'>
+                    Stop
             </div>
-            <div class = 'stop-button'>
-                Stop
             </div>
         </div>
     </div>
 </body>
+
+<script src = './Pomodoro.js'></script>
