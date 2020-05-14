@@ -22,6 +22,10 @@ function Play () {
     else{
         isPlaying = !isPlaying;
         HandleClock("play");
+        if(isSession){
+          document.querySelector('.session-title').classList.add("isActive");
+        }
+
         started = true;
     }
 
@@ -75,11 +79,15 @@ function CountDown()
       //start break
       seconds = (document.querySelector('#break-minutes').innerText) * 60 ;
       document.querySelector(".clock").innerText = document.querySelector("#break-minutes").innerText;
+      document.querySelector('.break-title').classList.add('isActive')
+      document.querySelector('.session-title').classList.remove('isActive')
       isSession = false;
     }else {
       //start session
       seconds = (document.querySelector('#session-minutes').innerText) * 60;
       document.querySelector(".clock").innerText = document.querySelector("#session-minutes").innerText;
+      document.querySelector('.session-title').classList.add('isActive')
+      document.querySelector('.break-title').classList.remove('isActive')
       isSession = true;
     }
   }
